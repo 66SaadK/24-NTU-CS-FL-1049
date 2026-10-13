@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #include <Arduino.h>
 #include <Wire.h>
 #include <Adafruit_GFX.h>
@@ -10,8 +9,8 @@
 #define OLED_SDA 21
 #define OLED_SCL 22
 #define OLED_ADDR 0x3C
-#define DHT_PIN 19
-#define DHT_TYPE DHT22
+#define DHT_PIN 14
+#define DHT_TYPE DHT11
 
 Adafruit_SSD1306 display(
     SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1
@@ -82,30 +81,4 @@ void loop() {
 
     display.display();
     delay(2000);
-=======
-// Week3-Lecture1
-// Interrupt (External -Button)
-// Embedded IoT System Fall-2025
-
-// Name: xyz                  Reg#: 1234
-
-#include<Arduino.h>
-const int buttonPin = 32;
-const int ledPin = 4;
-volatile bool ledState = LOW;
-
-void IRAM_ATTR handleButton() {
-  ledState = !ledState;
-  digitalWrite(ledPin, ledState);
-}
-
-void setup() {
-  pinMode(buttonPin, INPUT_PULLUP);
-  pinMode(ledPin, OUTPUT);
-  attachInterrupt(digitalPinToInterrupt(buttonPin), handleButton, FALLING);
-}
-
-void loop() {
-  // main loop free for other tasks
->>>>>>> 89a49df0637e818a69c3454e4fcdfe9231218829
 }
