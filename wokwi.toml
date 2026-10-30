@@ -1,4 +1,14 @@
 [wokwi]
 version = 1
+<<<<<<< HEAD
 firmware = ".pio/build/esp32dev/firmware.bin"
 elf = ".pio/build/esp32dev/firmware.elf"
+=======
+<<<<<<< HEAD
+firmware = '.pio/build/esp32dev/firmware.bin'
+elf = '.pio/build/esp32dev/firmware.elf'
+=======
+firmware = ".pio/build/esp32dev/firmware.bin"
+elf = ".pio/build/esp32dev/firmware.elf"
+>>>>>>> 89a49df0637e818a69c3454e4fcdfe9231218829
+>>>>>>> e172d5a0970f46143dcd571428a8a985163c0126
